@@ -790,6 +790,7 @@ header.site-header:after {
 .section_guide {
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding: 100px 0;
     position: relative;
 }
@@ -801,7 +802,7 @@ header.site-header:after {
     bottom: 0;
     right: 0;
     left: 0;
-    background: rgba(255, 255, 255, .5);
+    background: linear-gradient(to top, transparent -20%, rgba(255, 255, 255, 1) 100%);
 }
 
 .section_guide .column {

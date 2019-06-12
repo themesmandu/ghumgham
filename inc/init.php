@@ -31,11 +31,6 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/customizer/defaults.php';
 
 /**
- * Include options function.
- */
-require get_template_directory() . '/inc/options.php';
-
-/**
  * Include core function.
  */
 require get_template_directory() . '/inc/core.php';
