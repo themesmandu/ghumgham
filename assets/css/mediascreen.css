@@ -319,6 +319,9 @@
     .section_about {
         margin-top: 32px;
     }
+    .section_testimonial {
+        padding: 32px 0 38px;
+    }
     .section_information h2 {
         font-size: 40px;
     }
@@ -343,5 +346,15 @@
     }
     .section_about .sub-image:last-child {
         right: 10px;
+    }
+    .section_testimonial h2 {
+        font-size: 42px;
+    }
+    .section_testimonial .slick-dots li {
+        margin-right: 4px;
+    }
+    .section_testimonial .slick-dots button {
+        height: 12px;
+        width: 12px;
     }
 }
