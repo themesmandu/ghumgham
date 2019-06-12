@@ -141,7 +141,7 @@ if ( ! function_exists( 'ghumgham_sanitize_category_list' ) ) :
 	/**
 	 * Sanitizes category list
 	 *
-	 * @param int $input entered value.
+	 * @param array $input entered value.
 	 * @return sanitized output
 	 *
 	 * @since Ghumgham 1.0.0

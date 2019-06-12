@@ -25,5 +25,5 @@ if ( 0 === count( $active ) ) {
 			<?php endforeach; ?>
 		</div><!-- #footer-widgets -->
 	</div>
-	<button class="up-btn" id="up-btn" title="<?php echo esc_html( __( 'Go to top', 'doubleR' ) ) ; ?>" style="display: block;"><i class="fas fa-chevron-up"></i></button>
+	<button class="up-btn" id="up-btn" title="<?php echo esc_html( __( 'Go to top', 'doubleR' ) ); ?>" style="display: block;"><i class="fas fa-chevron-up"></i></button>
 </footer>

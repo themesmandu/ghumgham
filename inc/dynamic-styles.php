@@ -97,13 +97,13 @@ header.site-header {
 	padding: 100px 0 600px;
 }
 #footer .overlay {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: linear-gradient(to top, transparent -20%, rgba(255, 255, 255, 1) 60%);
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: linear-gradient(to top, transparent -20%, rgba(255, 255, 255, 1) 60%);
 }
 @media (max-width: 991px) {
 	#footer{
