@@ -79,8 +79,10 @@ if ( ! function_exists( 'ghumgham_header_page_title' ) ) :
 				$ghumgham_header_description = apply_filters( 'the_content', get_post( ghumgham_theme_options( 'header_page' ) )->post_content );
 			?>
 			<div class="header-content">
+			<?php if ( ! empty( ghumgham_theme_options( 'header_page' ) ) ) { ?>
 				<h1><?php echo wp_kses_post( $ghumgham_header_title ); ?></h1>
 					<?php echo wp_kses_post( $ghumgham_header_description ); ?>
+					<?php } ?>
 			</div>
 			<?php
 		elseif ( ! is_front_page() && is_home() || is_singular() ) :
