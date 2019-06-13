@@ -530,11 +530,11 @@ header.site-header:after {
 }
 
 .section_destination .fig-two {
-    max-height: 207px;
+    height: 207px;
 }
 
 .section_destination .fig-three {
-    max-height: 209px;
+    height: 209px;
     margin-top: 42px;
 }
 
