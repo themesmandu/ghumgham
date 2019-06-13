@@ -191,49 +191,48 @@ if ( class_exists( 'WP_Travel' ) ) {
 	</section>
 <?php } ?>
 
-<section class="section_testimonial" style="background-image: url(
-			<?php echo get_template_directory_uri() . '/assets/images/highway.jpg'; ?>
-	);">
+
+<?php
+$active_testimonials = array();
+for ( $i = 1; $i <= 6; $i++ ) {
+	if ( ! empty( ghumgham_theme_options( 'front_testimonial_slider_' . $i ) ) ) {
+		$active_testimonials[] = $i;
+	}
+}
+?>
+<?php if ( 0 !== count( $active_testimonials ) || ! empty( ghumgham_theme_options( 'front_testimonial_page' ) ) ) { ?>
+<section class="section_testimonial">
 	<div class="container">
-		<h2>Client Reviews</h2>
+	<?php
+	if ( ! empty( ghumgham_theme_options( 'front_testimonial_page' ) ) ) {
+		$ghumgham_testimonial_title = apply_filters( 'the_title', get_post( ghumgham_theme_options( 'front_testimonial_page' ) )->post_title );
+		?>
+		<h2><?php echo wp_kses_post( $ghumgham_testimonial_title ); ?></h2>
+		<?php } ?>
+		<?php if ( 0 !== count( $active_testimonials ) ) { ?>
 		<div class="testimonialslide">
+			<?php foreach ( $active_testimonials as $active_testimonial ) { ?>
+				<?php if ( ! empty( ghumgham_theme_options( 'front_testimonial_slider_' . $active_testimonial ) ) ) { ?>
 			<div class="test_slide">
-				<img src="<?php echo get_template_directory_uri() . '/assets/images/hamalaya.jpg'; ?>">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-					dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-				<span>PRAVASH CHAMLING RAI</span>
+					<?php if ( ! empty( wp_get_attachment_url( get_post_thumbnail_id( ghumgham_theme_options( 'front_testimonial_slider_' . $active_testimonial ) ) ) ) ) { ?>
+				<img src="<?php echo esc_url( wp_get_attachment_url( get_post_thumbnail_id( ghumgham_theme_options( 'front_testimonial_slider_' . $active_testimonial ) ) ) ); ?>">
+					<?php } ?>
+					<?php
+					if ( ! empty( ghumgham_theme_options( 'front_testimonial_slider_' . $active_testimonial ) ) ) {
+						$ghumgham_testimony_title       = apply_filters( 'the_title', get_post( ghumgham_theme_options( 'front_testimonial_slider_' . $active_testimonial ) )->post_title );
+						$ghumgham_testimony_description = apply_filters( 'the_content', get_post( ghumgham_theme_options( 'front_testimonial_slider_' . $active_testimonial ) )->post_content );
+						?>
+						<?php echo wp_kses_post( $ghumgham_testimony_description ); ?>
+						<span><?php echo wp_kses_post( $ghumgham_testimony_title ); ?></span>
+						<?php } ?>
 			</div>
-
-			<div class="test_slide">
-				<img src="<?php echo get_template_directory_uri() . '/assets/images/hamalaya.jpg'; ?>">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-					dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-				<span>PRAVASH CHAMLING RAI</span>
-			</div>
-
-			<div class="test_slide">
-				<img src="<?php echo get_template_directory_uri() . '/assets/images/hamalaya.jpg'; ?>">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-					dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-				<span>PRAVASH CHAMLING RAI</span>
-			</div>
-
-			<div class="test_slide">
-				<img src="<?php echo get_template_directory_uri() . '/assets/images/hamalaya.jpg'; ?>">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-					dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-				<span>PRAVASH CHAMLING RAI</span>
-			</div>
-
-			<div class="test_slide">
-				<img src="<?php echo get_template_directory_uri() . '/assets/images/hamalaya.jpg'; ?>">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-					dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-				<span>PRAVASH CHAMLING RAI</span>
-			</div>
+			<?php } ?>
+			<?php } ?>
 		</div>
+		<?php } ?>
 	</div>
 </section>
+<?php } ?>
 
 
 <?php

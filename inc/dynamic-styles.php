@@ -61,6 +61,18 @@ header.site-header {
 		<?php } ?>
 
 		<?php
+		if ( ! empty( ghumgham_theme_options( 'front_testimonial_page' ) ) ) {
+			?>
+.section_testimonial {
+	background-image: url(
+			<?php
+			echo esc_url( wp_get_attachment_url( get_post_thumbnail_id( ghumgham_theme_options( 'front_testimonial_page' ) ) ) );
+			?>
+	);
+}
+		<?php } ?>
+
+		<?php
 		if ( ! empty( ghumgham_theme_options( 'front_guide_page' ) ) ) {
 			?>
 .section_guide {
