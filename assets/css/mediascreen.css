@@ -227,6 +227,13 @@
     #navbarmenus .caret {
         display: none;
     }
+    .top-navigation ul li:hover>ul,
+    .top-navigation ul li.focus>ul {
+        display: block;
+    }
+    .navbar-expand-lg .menu-item-has-children .nav-link {
+        display: block;
+    }
     .header-content {
         padding: 62px 0 0;
     }
