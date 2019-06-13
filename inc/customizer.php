@@ -80,6 +80,9 @@ function ghumgham_customize_register( $wp_customize ) {
 		// load articles option.
 		require get_template_directory() . '/inc/customizer/front-page/articles.php';
 
+		// load testimonial option.
+		require get_template_directory() . '/inc/customizer/front-page/testimonial.php';
+
 		// load partners option.
 		require get_template_directory() . '/inc/customizer/front-page/partners.php';
 
