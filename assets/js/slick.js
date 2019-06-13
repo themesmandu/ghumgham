@@ -3034,21 +3034,6 @@ $(document).on('ready', function() {
         dots: true,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
-        responsive: [{
-                breakpoint: 991, // tablet breakpoint
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 767, // mobile breakpoint
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
+        autoplaySpeed: 3000
     });
 });
