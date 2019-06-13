@@ -35,3 +35,27 @@ $wp_customize->add_control(
 		'type'        => 'dropdown-pages',
 	)
 );
+
+for ( $i = 1; $i <= 6; $i++ ) {
+	// Add dropdown page for testimonial section slider.
+	$wp_customize->add_setting(
+		'ghumgham_theme_options[front_testimonial_slider_' . $i . ']',
+		array(
+			'sanitize_callback' => 'absint',
+		)
+	);
+
+	$wp_customize->add_control(
+		'ghumgham_theme_options[front_testimonial_slider_' . $i . ']',
+		array(
+			/* translators: %d: testimonial page number. */
+			'label'       => sprintf( esc_html__( 'Select page for testimonial %d ', 'ghumgham' ), $i ),
+			'description' => esc_html__(
+				'Note: Selected page\'s title, description and featured image will be used in front page for testinomial section slider',
+				'ghumgham'
+			),
+			'section'     => 'ghumgham_testimonial_section',
+			'type'        => 'dropdown-pages',
+		)
+	);
+}
