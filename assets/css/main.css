@@ -752,7 +752,6 @@ header.site-header:after {
 .section_testimonial {
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
     position: relative;
     text-align: center;
     padding: 100px 0;
