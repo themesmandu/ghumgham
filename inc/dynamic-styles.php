@@ -10,7 +10,7 @@
 if ( ! function_exists( 'ghumgham_dynamic_styles' ) ) :
 
 	/**
-	 * Display page title on header.
+	 * Dynamic styles for theme.
 	 *
 	 * @since 1.0.0
 	 */
