@@ -24,11 +24,6 @@
 /* gotham fonts */
 
 @font-face {
-    font-family: "GothamMedium";
-    src: url('../fonts/Gotham-Medium.ttf') format('truetype');
-}
-
-@font-face {
     font-family: "GothamBold";
     src: url('../fonts/Gotham-Bold.otf') format('opentype');
 }
@@ -482,7 +477,7 @@ header.site-header:after {
 }
 
 .section_destination h2 {
-    font-family: GothamMedium;
+    font-family: GothamBold;
     font-size: 48px;
     color: #3381f2;
     line-height: 1.2;
@@ -543,7 +538,7 @@ header.site-header:after {
 }
 
 .section_destination .row span {
-    font-family: "GothamMedium";
+    font-family: "GothamBold";
     position: absolute;
     font-size: 14px;
     top: 16px;
@@ -707,7 +702,7 @@ header.site-header:after {
 }
 
 .section_blog h2 span {
-    font-family: GothamMedium;
+    font-family: GothamBold;
     font-size: 93px;
     color: #2f4778;
     text-transform: none;
@@ -763,7 +758,7 @@ header.site-header:after {
 }
 
 .section_testimonial h2 {
-    font-family: GothamMedium;
+    font-family: GothamBold;
     font-size: 51px;
     color: #e5e8eb;
     position: relative;
@@ -877,7 +872,7 @@ header.site-header:after {
 }
 
 .section_partners h1 {
-    font-family: GothamMedium;
+    font-family: GothamBold;
     font-size: 51px;
     color: #2f4778;
     margin-bottom: 20px;
@@ -946,7 +941,7 @@ header.site-header:after {
 }
 
 .section_guide h2 span {
-    font-family: GothamMedium;
+    font-family: GothamBold;
     font-size: 88px;
     text-transform: none;
     display: block;
@@ -969,7 +964,7 @@ header.site-header:after {
 }
 
 .section_guide h3 {
-    font-family: GothamMedium;
+    font-family: GothamBold;
     font-size: 21px;
     color: #090909;
     letter-spacing: -1px;

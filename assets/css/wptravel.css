@@ -52,7 +52,7 @@
 }
 
 .wp-travel-toolbar .wp_travel_input_filters {
-    font-family: GothamMedium;
+    font-family: GothamBold;
     font-size: 12px;
     background: #f1f1f1;
     color: rgba(4, 4, 4, .47);
@@ -68,7 +68,7 @@
 
 .wp-travel-toolbar .wp-travel-filter-button .btn-wp-travel-filter,
 .wp-travel-default-article .wp-travel-explore a {
-    font-family: GothamMedium;
+    font-family: GothamBold;
     font-size: 13px;
     background: #2e5ea2;
     color: #ffffff;
@@ -154,7 +154,7 @@
 .wp-travel-archive-content .entry-title a,
 .wp-travel-archive-content .wp-travel-itinerary-items .wp-travel-post-item-wrapper .post-title a,
 .wp-travel-itinerary-items .wp-travel-entry-content-wrapper .entry-title a {
-    font-family: GothamMedium;
+    font-family: GothamBold;
     font-size: 21px;
     color: #035489;
     letter-spacing: .2px;
@@ -525,7 +525,7 @@
 }
 
 .wp-travel.trip-headline-wrapper .right-plot-inner-wrap .entry-title {
-    font-family: GothamMedium;
+    font-family: GothamBold;
     font-size: 30px;
     color: #035489;
     letter-spacing: -1px;
@@ -935,7 +935,7 @@ ul.availabily-list li>form>div input[type=text] {
 }
 
 .section_search h2 {
-    font-family: GothamMedium;
+    font-family: GothamBold;
     font-size: 27px;
     color: #3381f2;
     line-height: 1.2;
