@@ -172,9 +172,15 @@
     color: #3f4d56;
 }
 
+.wp-travel-archive-content .wp-travel-entry-content-wrapper .entry-meta {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .entry-meta .travel-info,
 .entry-meta .category-list-items {
     margin-right: 26px;
+    margin: auto 7px auto 0;
 }
 
 .entry-meta .category-list-items a,
