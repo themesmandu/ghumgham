@@ -37,7 +37,7 @@ function ghumgham_ocdi_after_import_setup() {
 	set_theme_mod(
 		'nav_menu_locations',
 		array(
-			'primary' => $main_menu->term_id,
+			'menu-1' => $main_menu->term_id,
 		)
 	);
 
