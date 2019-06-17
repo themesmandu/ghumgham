@@ -180,7 +180,7 @@
 .entry-meta .travel-info,
 .entry-meta .category-list-items {
     margin-right: 26px;
-    margin: auto 7px auto 0;
+    margin: auto 15px auto 0;
 }
 
 .entry-meta .category-list-items a,
@@ -240,6 +240,18 @@
     background: #035489;
     padding: 5px 29px;
     letter-spacing: .4px;
+}
+
+.parsley-errors-list {
+    right: 0;
+}
+
+.ws-theme-cart-page .update-cart {
+    line-height: 1.5;
+}
+
+.ws-theme-cart-page .ws-theme-cart-list tr {
+    vertical-align: top;
 }
 
 
