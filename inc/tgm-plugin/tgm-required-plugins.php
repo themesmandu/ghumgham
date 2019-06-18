@@ -60,14 +60,14 @@ function ghumgham_register_required_plugins() {
 	$plugins = array(
 
 		array(
-			'name'     => esc_html__( 'WP Travel', 'ghumgham' ),
-			'slug'     => 'wp-travel',
+			'name'     => esc_html__( 'One Click Demo Import', 'ghumgham' ),
+			'slug'     => 'one-click-demo-import',
 			'required' => false,
 		),
 
 		array(
-			'name'     => esc_html__( 'One Click Demo Import', 'ghumgham' ),
-			'slug'     => 'one-click-demo-import',
+			'name'     => esc_html__( 'WP Travel', 'ghumgham' ),
+			'slug'     => 'wp-travel',
 			'required' => false,
 		),
 
