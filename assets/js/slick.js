@@ -3001,6 +3001,7 @@
 }));
 
 /* -- slick slider java script -- */
+jQuery(document).ready(function($){
 
 $(document).on('ready', function() {
     $(".clientslide").slick({
@@ -3037,3 +3038,4 @@ $(document).on('ready', function() {
         autoplaySpeed: 3000
     });
 });
+})

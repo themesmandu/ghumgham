@@ -173,7 +173,7 @@ function ghumgham_scripts() {
 	wp_enqueue_script( 'ghumgham-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	// Loading slick-slide jquery and js.
-	wp_enqueue_script( 'slick-slide-js', get_theme_file_uri( '/assets/js/slick-slide-jQuery.js' ), array(), '2.2.0', true );
+	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'slick-js', get_theme_file_uri( '/assets/js/slick.js' ), array(), '1.0.0', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
