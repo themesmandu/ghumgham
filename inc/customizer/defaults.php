@@ -33,7 +33,7 @@ if ( ! function_exists( 'ghumgham_get_default_theme_options' ) ) :
 		// footer section.
 		$defaults['footer_button_text']    = 'LEARN MORE';
 		$defaults['footer_button_link']    = home_url();
-		$defaults['footer_copyright_text'] = 'Copyright';
+		$defaults['footer_copyright_text'] = 'Your copyright appears here';
 
 		// Pass through filter.
 		$defaults = apply_filters( 'ghumgham_get_default_theme_options', $defaults );

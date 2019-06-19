@@ -12,7 +12,7 @@
 			<?php
 			$copyright_text = ghumgham_theme_options( 'footer_copyright_text' );
 			/* translators: %s: Ghumgham. */
-			$powered_by_text = sprintf( esc_html__( '&copy; %1$s %2$s by %3$s', 'ghumgham' ), date( 'Y' ), esc_html( wp_get_theme()->get( 'Name' ) ), '&nbsp;<a target="_blank" href="' . esc_url( wp_get_theme()->get( 'AuthorURI' ) ) . '">' . esc_html( ucwords( wp_get_theme()->get( 'Author' ) ) ) . '</a>' );
+			$powered_by_text = sprintf( esc_html__( '| Developed by %1$s', 'ghumgham' ), '&nbsp;<a target="_blank" href="' . esc_url( wp_get_theme()->get( 'AuthorURI' ) ) . '">' . esc_html( ucwords( wp_get_theme()->get( 'Author' ) ) ) . '</a>' );
 			?>
 			<?php if ( ! empty( $copyright_text ) || ! empty( $powered_by_text ) ) : ?>
 			<div class="colophon-bottom">
