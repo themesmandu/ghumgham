@@ -3001,41 +3001,40 @@
 }));
 
 /* -- slick slider java script -- */
-jQuery(document).ready(function($){
-
-$(document).on('ready', function() {
-    $(".clientslide").slick({
-        infinite: true,
-        slidesToShow: 8,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        responsive: [{
-                breakpoint: 991, // tablet breakpoint
-                settings: {
-                    slidesToShow: 5,
-                    slidesToScroll: 1
+jQuery(document).ready(function($) {
+    $(document).on('ready', function() {
+        $(".clientslide").slick({
+            infinite: true,
+            slidesToShow: 8,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            responsive: [{
+                    breakpoint: 991, // tablet breakpoint
+                    settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 767, // mobile breakpoint
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
                 }
-            },
-            {
-                breakpoint: 767, // mobile breakpoint
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1
-                }
-            }
-        ]
+            ]
+        });
     });
-});
 
-$(document).on('ready', function() {
-    $(".testimonialslide").slick({
-        infinite: true,
-        slidesToShow: 1,
-        dots: true,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000
+    $(document).on('ready', function() {
+        $(".testimonialslide").slick({
+            infinite: true,
+            slidesToShow: 1,
+            dots: true,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000
+        });
     });
-});
 })
