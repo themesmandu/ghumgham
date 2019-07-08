@@ -22,7 +22,7 @@ function ghumgham_custom_header_setup() {
 		apply_filters(
 			'ghumgham_custom_header_args',
 			array(
-				'default-image'      => get_template_directory_uri() . '/assets/images/treaking.jpg',
+				'default-image'      => get_template_directory_uri() . '/assets/images/treaking.png',
 				'default-text-color' => '000000',
 				'width'              => 1920,
 				'height'             => 880,
