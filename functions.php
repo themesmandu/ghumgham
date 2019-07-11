@@ -136,7 +136,7 @@ function ghumgham_widgets_init() {
 				/* translators: %d: footer widget number. */
 				'name'          => sprintf( esc_html__( 'Footer %d', 'ghumgham' ), $i ),
 				'id'            => 'footer-' . $i,
-				'before_widget' => '<div id="%1$s" class="widget %2$s col-lg-3 col-sm-6">',
+				'before_widget' => '<div id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</div>',
 				'before_title'  => '<h3 class="widget-title">',
 				'after_title'   => '</h3>',
