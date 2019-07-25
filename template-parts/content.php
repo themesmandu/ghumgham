@@ -38,7 +38,7 @@
 
 		if ( ! is_singular() ) :
 			?>
-			<a class="more_link" href="<?php esc_url( the_permalink() ); ?>"><?php echo esc_html__( 'Read More', 'ghumgham' ); ?></a>	
+			<a class="more_link" href="<?php the_permalink(); ?>"><?php echo esc_html__( 'Read More', 'ghumgham' ); ?></a>	
 			<?php
 			endif;
 

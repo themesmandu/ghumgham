@@ -75,7 +75,7 @@ class Ghumgham_Dropdown_Posts_Control extends WP_Customize_Control {
 					foreach ( $this->posts as $post ) {
 						printf(
 							'<option value="%s" %s>%s</option>',
-							esc_attr( $post->ID ),
+							esc_html( $post->ID ),
 							selected( $this->value(), $post->ID, false ),
 							esc_html( $post->post_title )
 						);

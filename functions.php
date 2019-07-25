@@ -157,7 +157,7 @@ function ghumgham_scripts() {
 	// Loading theme style stylesheet.
 	wp_enqueue_style( 'ghumgham-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
 	// Loading main stylesheet.
-	wp_enqueue_style( 'main-css', get_theme_file_uri( '/assets/css/main.css' ), array( 'ghumgham-style' ), wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_style( 'ghumgham-main-css', get_theme_file_uri( '/assets/css/main.css' ), array( 'ghumgham-style' ), wp_get_theme()->get( 'Version' ) );
 
 	// Loading wptravel stylesheet.
 	wp_enqueue_style( 'wptravel-css', get_theme_file_uri( '/assets/css/wptravel.css' ), array( 'ghumgham-style' ), wp_get_theme()->get( 'Version' ) );
@@ -166,7 +166,7 @@ function ghumgham_scripts() {
 	wp_enqueue_style( 'mediascreen-css', get_theme_file_uri( '/assets/css/mediascreen.css' ), array( 'ghumgham-style' ), wp_get_theme()->get( 'Version' ) );
 
 	// Add font-awesome fonts, used in the main stylesheet.
-	wp_enqueue_style( 'ghumgham-font-awesome', get_theme_file_uri( '/assets/font-awesome-5.7.2/css/all.css' ), array( 'ghumgham-style' ), '5.7.2' );
+	wp_enqueue_style( 'font-awesome', get_theme_file_uri( '/assets/font-awesome-5.7.2/css/all.css' ), array( 'ghumgham-style' ), '5.7.2' );
 
 	wp_enqueue_script( 'ghumgham-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
