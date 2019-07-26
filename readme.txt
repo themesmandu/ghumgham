@@ -64,6 +64,14 @@ Source: https://underscores.me/
 License: MIT
 Source: https://getbootstrap.com/
 
+* TGM-Plugin-Activation, Copyright (c) 2011, Thomas Griffin
+License: GPL-2.0+
+Source: http://tgmpluginactivation.com/
+
+* Slick.js, Copyright (c) 2017 Ken Wheeler
+License: MIT
+Source: https://github.com/kenwheeler/slick
+
 * Screenshots Image, trekking.png
 https://pxhere.com/en/photo/892848
 License: Creative Commons Zero (CC0) license
