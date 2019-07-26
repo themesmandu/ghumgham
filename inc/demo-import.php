@@ -7,24 +7,6 @@
  * @package Ghumgham
  */
 
-/**
- * Imports predefine demos.
- *
- * @return [type] [description]
- */
-function ghumgham_ocdi_import_files() {
-	return array(
-		array(
-			'import_file_name'           => esc_html__( 'Ghumgham Demo', 'ghumgham' ),
-			'import_file_url'            => get_template_directory_uri() . '/assets/demo-data/ghumgham-all-content.xml',
-			'import_widget_file_url'     => get_template_directory_uri() . '/assets/demo-data/ghumgham-widgets.wie',
-			'import_customizer_file_url' => get_template_directory_uri() . '/assets/demo-data/ghumgham-customizer.dat',
-			'import_preview_image_url'   => get_template_directory_uri() . '/screenshot.png',
-			'import_notice'              => esc_html__( 'Please wait for a few minutes, do not close the window or refresh the page until the data is imported.', 'ghumgham' ),
-		),
-	);
-}
-add_filter( 'pt-ocdi/import_files', 'ghumgham_ocdi_import_files' );
 
 /**
  *
